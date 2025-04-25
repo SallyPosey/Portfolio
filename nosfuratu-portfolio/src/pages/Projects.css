@@ -46,6 +46,7 @@ html, body {
   overflow-y: auto;
   box-sizing: border-box;
   position: relative;
+  padding-bottom: 5rem; /* Add padding at the bottom for the button */
 }
 
 .projects-title {
@@ -133,6 +134,11 @@ html, body {
   margin-top: 1rem;
   box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
   font-weight: bold;
+  position: fixed; /* Fix the button position */
+  bottom: 2rem; /* Position from bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .projects-container .neon-button:hover {
@@ -160,6 +166,7 @@ html, body {
 @media screen and (max-width: 768px) {
   .projects-container {
     padding: 0.5rem;
+    padding-bottom: 5rem; /* Maintain bottom padding on mobile */
   }
   
   .projects-grid {
@@ -179,5 +186,10 @@ html, body {
   .project-link {
     padding: 0.3rem 0.6rem;
     min-width: 90px;
+  }
+  
+  .projects-container .neon-button {
+    bottom: 1rem; /* Adjust bottom position for mobile */
+    padding: 0.6rem 1.2rem; /* Slightly smaller padding on mobile */
   }
 } 
