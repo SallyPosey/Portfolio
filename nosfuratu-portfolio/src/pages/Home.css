@@ -1,0 +1,99 @@
+/* Full page setup */
+.home-container {
+  height: 100vh;
+  background: url('../assets/citynight.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Buttons container */
+.button-group {
+  margin-top: 30px;
+}
+
+/* The NEON BUTTON style */
+.neon-button {
+  font-family: 'Press Start 2P', cursive;
+  color: #FF69B4;
+  background: transparent;
+  border: 2px solid #FF69B4;
+  padding: 14px 28px;
+  margin: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #FF69B4;
+  box-shadow: 0 0 8px #FF69B4;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  color: #FFFFFF;
+  box-shadow: 0 0 20px #FF69B4, 0 0 40px #FF69B4;
+  transform: scale(1.05);
+}
+
+/* Neon Popup Window */
+.neon-popup {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #FF69B4;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  color: #FFFFFF;
+  box-shadow: 0 0 20px #FF69B4, 0 0 40px #FF69B4;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.neon-popup h2 {
+  color: #FF69B4;
+  text-shadow: 0 0 10px #FF69B4;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.neon-popup p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.contact-links {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 1px solid #FF69B4;
+  border-bottom: 1px solid #FF69B4;
+}
+
+.contact-links p {
+  margin: 0.5rem 0;
+}
+
+.contact-links a {
+  color: #FF69B4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FF69B4;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #FF69B4, 0 0 40px #FF69B4;
+  }
+  to {
+    box-shadow: 0 0 30px #FF69B4, 0 0 60px #FF69B4;
+  }
+} 
