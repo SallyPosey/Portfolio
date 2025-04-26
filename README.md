@@ -1,4 +1,4 @@
 # Portfolio
 Hey! Welcome to my personal webpage, check it out.
-(https://nosfuratu.netlify.app/)
+(https://www.nosfuratu.com/)
 (also linked on main GitHub profile)
