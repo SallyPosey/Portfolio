@@ -118,7 +118,7 @@
   height: auto;
   position: absolute;
   left: 13%;  /* Exact position from left edge */
-  bottom: 30px;  /* Exact distance from bottom */
+  bottom: 4px;  /* Exact distance from bottom */
   image-rendering: pixelated;
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;
