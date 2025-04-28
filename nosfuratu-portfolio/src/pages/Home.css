@@ -16,9 +16,18 @@
 .button-group {
   margin-top: 30px;
   display: flex;
+  justify-content: center;  /* Center the buttons */
   align-items: center;
   gap: 15px;
   position: relative;
+  width: 100%;
+}
+
+/* The button container without the cat */
+.buttons-only {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 /* The NEON BUTTON style */
@@ -107,7 +116,8 @@
 .tiny-cat {
   width: 59px;
   height: auto;
-  margin-left: 15px;
+  position: absolute;
+  left: 20%;  /* Position cat on the left side */
   image-rendering: pixelated;
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;

@@ -34,12 +34,14 @@ function Home() {
       </p>
       <div className="button-group">
         <img src={tinycat} alt="Tiny Cat" className="tiny-cat" />
-        <Link to="/about">
-          <button className="neon-button">About Me</button>
-        </Link>
-        <Link to="/projects">
-          <button className="neon-button">Projects</button>
-        </Link>
+        <div className="buttons-only">
+          <Link to="/about">
+            <button className="neon-button">About Me</button>
+          </Link>
+          <Link to="/projects">
+            <button className="neon-button">Projects</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
