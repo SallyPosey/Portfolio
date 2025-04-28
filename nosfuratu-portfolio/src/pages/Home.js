@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import tinycat from '../assets/tinycat.png';
 
 function Home() {
+  const [showBubble, setShowBubble] = useState(false);
+
+  const handleCatClick = () => {
+    setShowBubble(true);
+    // Hide the bubble after 2 seconds
+    setTimeout(() => {
+      setShowBubble(false);
+    }, 2000);
+  };
+
   return (
     <div className="home-container">
-      <img src={tinycat} alt="Tiny Cat" className="tiny-cat" />
+      <img 
+        src={tinycat} 
+        alt="Tiny Cat" 
+        className="tiny-cat" 
+        onClick={handleCatClick}
+      />
+      <div className={`chat-bubble ${showBubble ? 'show' : ''}`}>
+        MEOW!
+      </div>
       <h1 style={{ 
         fontSize: '4rem', 
         marginBottom: '2rem',
