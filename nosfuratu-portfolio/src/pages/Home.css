@@ -117,8 +117,8 @@
   width: 59px;
   height: auto;
   position: absolute;
-  left: 10%;  /* Moved more to the left from 20% */
-  bottom: -50px;  /* Added to move the cat down */
+  left: 8.5%;  /* Slightly more to the right from 7% but not as far as before */
+  bottom: 65px;  /* Higher up from 50px */
   image-rendering: pixelated;
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;
