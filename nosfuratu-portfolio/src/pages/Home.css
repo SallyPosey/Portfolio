@@ -105,9 +105,9 @@
 
 /* Tiny Cat Image */
 .tiny-cat {
-  width: 45px;
+  width: 59px;
   height: auto;
-  margin-left: 25px;
+  margin-left: 15px;
   image-rendering: pixelated;
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;
