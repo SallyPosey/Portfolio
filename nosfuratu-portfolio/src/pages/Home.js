@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import tinycat from '../assets/tinycat.png';
 
 function Home() {
   return (
     <div className="home-container">
+      <img src={tinycat} alt="Tiny Cat" className="tiny-cat" />
       <h1 style={{ 
         fontSize: '4rem', 
         marginBottom: '2rem',
