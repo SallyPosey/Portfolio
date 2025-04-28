@@ -6,7 +6,6 @@ import tinycat from '../assets/tinycat.png';
 function Home() {
   return (
     <div className="home-container">
-      <img src={tinycat} alt="Tiny Cat" className="tiny-cat" />
       <h1 style={{ 
         fontSize: '4rem', 
         marginBottom: '2rem',
@@ -34,6 +33,7 @@ function Home() {
         WELCOME TO MY PORTFOLIO
       </p>
       <div className="button-group">
+        <img src={tinycat} alt="Tiny Cat" className="tiny-cat" />
         <Link to="/about">
           <button className="neon-button">About Me</button>
         </Link>
