@@ -73,7 +73,10 @@ function Projects() {
             Interactive Dashboard, map and language model to explore the accessibility of public services near your address
           </p>
           <div className="project-links">
-            <span className="project-link">Wait 1 week</span>
+            <a href="https://know-your-zip-ccyn78dk5kcgeb2t5mvxgn.streamlit.app/" 
+               className="project-link" 
+               target="_blank" 
+               rel="noopener noreferrer">App Under Construction</a>
           </div>
         </div>
       </div>
