@@ -10,7 +10,7 @@ function Projects() {
         <div className="project-card">
           <h2 className="project-title">Basketball Analytics</h2>
           <p className="project-summary">
-            Classification Model to predict wins based on game metrics for the 2024-2025 womens basketball team of Miami Dade College
+            Application which utilizes three separate regression models to predict wins based on the past 11 seasons of the Miami Dade College women's basketball team
           </p>
           <div className="project-links">
             <a href="https://colab.research.google.com/drive/1ftVDKIZjiPuammCoigxZgorQ9oiHbrb-#scrollTo=a00-Ctavmxj6&uniqifier=1" 
