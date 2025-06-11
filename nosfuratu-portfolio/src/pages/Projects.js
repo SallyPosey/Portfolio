@@ -38,6 +38,19 @@ function Projects() {
         </div>
 
         <div className="project-card">
+          <h2 className="project-title">Miami-Dade County</h2>
+          <p className="project-summary">
+            Interactive Dashboard, map and language model to explore the accessibility of public services near your address, utilizing live government APIs and geospatial data
+          </p>
+          <div className="project-links">
+            <a href="https://know-your-zip-ccyn78dk5kcgeb2t5mvxgn.streamlit.app/" 
+               className="project-link" 
+               target="_blank" 
+               rel="noopener noreferrer">App In Progress</a>
+          </div>
+        </div>
+
+        <div className="project-card">
           <h2 className="project-title">Exploring Emissions</h2>
           <p className="project-summary">
             A visual deep dive into global greenhouse gas emissions patterns, built with Tableau
@@ -77,19 +90,6 @@ function Projects() {
                className="project-link" 
                target="_blank" 
                rel="noopener noreferrer">Application</a>
-          </div>
-        </div>
-
-        <div className="project-card">
-          <h2 className="project-title">Miami-Dade County</h2>
-          <p className="project-summary">
-            Interactive Dashboard, map and language model to explore the accessibility of public services near your address, utilizing live government APIs and geospatial data
-          </p>
-          <div className="project-links">
-            <a href="https://know-your-zip-ccyn78dk5kcgeb2t5mvxgn.streamlit.app/" 
-               className="project-link" 
-               target="_blank" 
-               rel="noopener noreferrer">App In Progress</a>
           </div>
         </div>
       </div>
