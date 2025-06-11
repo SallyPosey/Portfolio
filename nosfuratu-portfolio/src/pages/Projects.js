@@ -20,7 +20,11 @@ function Projects() {
             <a href="https://basketballwins.netlify.app/" 
                className="project-link" 
                target="_blank" 
-               rel="noopener noreferrer">Application</a>
+               rel="noopener noreferrer">App 1.0</a>
+            <a href="https://basketball-predictor.netlify.app" 
+               className="project-link" 
+               target="_blank" 
+               rel="noopener noreferrer">App 2.0</a>
           </div>
         </div>
 
