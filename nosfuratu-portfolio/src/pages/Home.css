@@ -9,11 +9,25 @@
   align-items: center;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
+  position: relative;  /* Added for absolute positioning of cat */
 }
 
 /* Buttons container */
 .button-group {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;  /* Center the buttons */
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  width: 100%;
+}
+
+/* The button container without the cat */
+.buttons-only {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 /* The NEON BUTTON style */
@@ -96,4 +110,61 @@
   to {
     box-shadow: 0 0 30px #FF69B4, 0 0 60px #FF69B4;
   }
+}
+
+/* Tiny Cat Image and Chat Bubble */
+.tiny-cat {
+  width: 59px;
+  height: auto;
+  position: absolute;
+  left: 13%;
+  bottom: 0;
+  image-rendering: pixelated;
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tiny-cat:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.chat-bubble {
+  position: absolute;
+  left: calc(13% + 65px);  /* Position next to cat */
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FF69B4;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 2px solid #FF69B4;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  box-shadow: 0 0 10px #FF69B4;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.chat-bubble::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  bottom: 10px;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #FF69B4 transparent transparent;
+}
+
+.chat-bubble.show {
+  opacity: 1;
+  transform: translateY(0);
 } 
