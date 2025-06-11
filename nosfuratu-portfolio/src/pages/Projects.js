@@ -13,10 +13,19 @@ function Projects() {
             Application which utilizes three separate regression models to predict wins based on the past 11 seasons of the Miami Dade College women's basketball team
           </p>
           <div className="project-links">
+            <span className="notebook-label">Jupyter Notebooks: </span>
             <a href="https://colab.research.google.com/drive/1ftVDKIZjiPuammCoigxZgorQ9oiHbrb-#scrollTo=a00-Ctavmxj6&uniqifier=1" 
                className="project-link" 
                target="_blank" 
-               rel="noopener noreferrer">Jupyter Notebook</a>
+               rel="noopener noreferrer">1</a>
+            <a href="https://colab.research.google.com/drive/1pSImOR3r24dGb07Jl0eZmDtrjMv8WwBF#scrollTo=k9CjOsRDoVAx" 
+               className="project-link" 
+               target="_blank" 
+               rel="noopener noreferrer">2</a>
+            <a href="https://colab.research.google.com/drive/1gRZMH-tWn0-Uts9FIkaO_Fa_p5p89PIb#scrollTo=k9CjOsRDoVAx" 
+               className="project-link" 
+               target="_blank" 
+               rel="noopener noreferrer">3</a>
             <a href="https://basketballwins.netlify.app/" 
                className="project-link" 
                target="_blank" 
